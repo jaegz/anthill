@@ -1,0 +1,281 @@
+
+// BASE: susy grid settings
+////////////////////////////////////////////////
+
+$susy: (
+	columns: 12,
+	container: 980px,
+	gutters: 0.25,
+	global-box-sizing: border-box,
+	debug: (image: show-columns)
+);
+
+@include border-box-sizing;
+
+$breakpoints: ( 
+  'large'	: 760px // desktop & tablet
+);
+
+
+// BASE: fonts
+////////////////////////////////////////////////
+$base-font-size: 16px;
+
+// base font stack
+$segoe: segoe ui, arial, Avenir-Medium, HelveticaNeue, sans-serif;
+
+// header font stack
+$alda: alda-web-nyl, georgia, serif; 
+
+// used in rare situations
+$effra: nylic-effra, segoe ui, sans-serif;
+
+
+// BASE: default colors
+////////////////////////////////////////////////
+$iq-orange: #E87722;
+$iq-gray: #d4d5d7;
+$iq-gray-light: #f0f3f5;
+$iq-gray-dark: #8c8c8c;
+
+$nylblue: #007AC2;
+$rock: #53555C;
+$steel: #1D5E75;
+$trunk: #978981;
+
+
+
+// BASE: default html
+////////////////////////////////////////////////
+
+html {
+  font-family: $segoe;
+}
+
+body {
+	background: #edeeee;
+  padding-top: 64px;
+  position: relative;
+	@include mappy-bp(large) {
+		padding-top: 0;
+	}
+}
+
+.container {
+  min-width: 320px;
+	overflow: hidden;
+	position: relative;
+  @include mappy-bp(large) {
+    min-width: 980px;
+  }
+}
+
+.main {
+	@include container();
+	z-index: 1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  color: white;
+}
+
+p { 
+  color: $rock; 
+}
+
+a { 
+  color: $nylblue;
+  text-decoration: none;
+  &:hover {
+    color: #4ca2d4;
+  }
+}
+
+a.button {
+  background: #53A0D4;
+  background: linear-gradient(#53A0D4, $nylblue);
+  border: 1px solid $nylblue;
+  border-radius: 4px;
+  color: #fff;
+  font-family: $effra;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 7px 12px;
+  text-transform: uppercase;
+  display: block;
+  &:hover {
+    border: 1px solid #3395ce;
+    background: #75b3dd;
+    background: linear-gradient(#75b3dd, #3395ce);
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  display: inline-block;
+}
+
+input {
+  border: 1px solid #c3c4c5;
+  padding: 5px;
+}
+
+hr {
+  border: 0;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  vertical-align: top;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+svg, path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+
+// BASE: visibility
+////////////////////////////////////////////////
+
+.hidden { // (js)
+  display: none !important;
+}
+
+.showSmall {
+  display: block;
+  @include mappy-bp(large) {
+    display: none !important;
+  }
+}
+
+.showSmall-inline {
+  display: inline-block;
+  @include mappy-bp(large) {
+    display: none !important;
+  }
+}
+
+.showLarge {
+  display: none !important;
+  @include mappy-bp(large) {
+    display: block !important;
+  }  
+}
+
+.showLarge-inline {
+  display: none !important;
+  @include mappy-bp(large) {
+    display: inline-block !important;
+  }  
+}
+
+.vertical-align {
+  //parent element must be set to display: table;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// BASE: default dropDown styles (js)
+////////////////////////////////////////////////
+
+.dropDown-content {
+  position: absolute;
+  z-index: 100;
+}
+
+.dropDown-content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropDown-content li {
+  display: list-item;
+  margin: 0px;
+  padding: 0px;
+}
+
+// OSX: HIDDEN SCROLLBAR FIX
+////////////////////////////////////////////////
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0px;
+    @include mappy-bp(large) {
+      width: 7px;
+  }
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+
+/*
+
+SUSY GRID EXAMPLES
+
+Show susy grid at different widths
+----------------------------------
+ @media (min-width: 800px) {
+    @include show-grid(#);
+}
+
+Min Width Query 
+---------------
+@include mappy-bp(small) {
+  stuff
+}
+
+Min Width And Max Width Query
+-----------------------------
+@include mappy-bp(small large) {
+  stuff
+}
+
+Max Width Query
+---------------
+You can also use `max` instead of `max-width`
+@include mappy-bp(max-width small) {
+  stuff  
+}
+
+Fine tuning
+-----------
+@include mappy-bp(small 920px) {
+  stuff
+}
+
+Height
+------
+You could also use the `h` identifier instead of `height`
+@include mappy-bp(height 480px large) {
+  stuff
+}
+
+Padding & Margin mixins
+-----------------------
+padding: gutter();
+margin: span(#);
+
+*/

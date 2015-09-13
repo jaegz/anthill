@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>TITLE</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="alertbar"></div>
+
+	<nav class="small">
+		<a href="#" class="logo">
+			<i class="svg-logo"></i>
+			<!-- inline svg for the logo -->
+		</a>
+
+		<ul>
+			<li class="offcanvasTrigger">
+				<i class="svg-nav-searchicon"></i>
+			</li>
+			<li class="offcanvasTrigger">
+				<i class="svg-nav-menuicon"></i>
+			</li>
+		</ul>
+	</nav><!-- nav-small -->
+
+	<nav class="full">
+		<a href="#" class="logo">
+			<i class="svg-logo"></i>
+			<!-- inline svg for the logo? -->
+		</a>
+		<ul class="dropDown">
+			<li>
+				<a href="" class="dropDown-trigger">Home</a>
+				<ul class="dropDown-content">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+				</ul>
+			</li>
+			<li>
+				<a href="" class="dropDown-trigger">About</a>
+				<div class="dropDown-content"></div>
+			</li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav><!-- nav-full -->
+	
+	<div class="offcanvas-overlay offcanvasOverlay"></div>
+	<!-- offcanvas-overlay -->
+
+	<div class="main">
+		<div class="section-slider clearfix">
+			<div class="slider-home flexslider">
+			<div class="slider-home-nav">
+				<a href="#" class="svg-slider-arrowLeft-white flex-prev"></a>
+				<a href="#" class="svg-slider-arrowRight-white flex-next"></a>
+			</div><!-- slider-home-nav -->
+				
+			<ul class="slides">
+				<li>
+		            <img src="img/IndexIQ_HP_promos-icon.jpg" alt="">
+		            <div class="slider-home-caption">
+		            	<h2><a href="#">Slider Headline 1 &raquo;</a></h2>
+	           		</div><!-- slider-home-caption -->
+		       	</li><!-- slide 1 - updated mm/dd/yyyy -->
+				<li>
+	            	<img src="img/IndexIQ_HP_promos-abstract.jpg" alt="">
+	            	<div class="slider-home-caption">
+	           			<h2><a href="#">Slider Headline 2 &raquo;</a></h2>
+	           		</div>
+		       	</li><!-- slide 2 - updated mm/dd/yyyy -->
+				<li>
+	            	<img src="img/IndexIQ_HP_promos-adam.jpg" alt="">
+	            	<div class="slider-home-caption">
+	           			<h2><a href="#">Slider Headline 3 &raquo;</a></h2>
+	           		</div>
+	        	</li><!-- slide 3 - updated mm/dd/yyyy -->
+			</ul><!-- slides -->
+
+			<div class="slider-home-bullets"></div>
+			</div><!-- slider-home flexslider -->
+		</div><!-- section-slider -->
+
+		<div class="section-one clearfix">
+		</div><!-- section-fundpicker -->
+		
+		<div class="section-two clearfix">
+		</div><!-- section-investment-themes -->
+
+		<div class="footer">
+		</div><!-- footer -->
+	</div><!-- main -->
+
+	<div class="offcanvas offcanvas-search translateOffcanvas">
+		<form action="" class="clearfix">
+			<input type="text" placeholder="Enter fund or keyword">
+			<button>search</button>	
+		</form>
+	</div><!-- offcanvas-search -->
+
+	<div class="offcanvas offcanvas-nav translateOffcanvas">
+		<div class="accordion-offcanvas accordion">
+  			<div class="accordion-offcanvas-header">
+  				<h3>HOME</h3><i class="svg-toggle-plusminus-white"></i>	
+  			</div>
+	  		<div class="accordion-offcanvas-content accordion2">
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item One</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Two</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Three</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+  			</div><!-- accoridan-offcanvas-content accordion -->
+  		</div><!-- accordion-offcanvas accordion -->
+
+		<div class="accordion-offcanvas accordion">
+			<div class="accordion-offcanvas-header">
+  				<h3>ABOUT</h3><i class="svg-toggle-plusminus-white"></i>	
+  			</div>
+	  		<div class="accordion-offcanvas-content accordion2">
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item One</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Two</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Three</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+  			</div><!-- accoridan-offcanvas-content accordion -->
+  		</div><!-- accordion-offcanvas accordion -->
+
+		<div class="accordion-offcanvas accordion">
+			<div class="accordion-offcanvas-header">
+  				<h3>CONTACT</h3><i class="svg-toggle-plusminus-white"></i>	
+  			</div>
+	  		<div class="accordion-offcanvas-content accordion2">
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item One</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Two</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+
+    			<div class="accordion-offcanvas-header">
+    				<h3>Item Three</h3><i class="svg-toggle-plusminus-rock"></i>
+    			</div>
+    			<div class="accordion-offcanvas-content">    
+      				<h4 class="accordion-offcanvas-h4">Item One Sub-header 1</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 1a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 1c</a>
+		 				</li>
+		 			</ul>
+					
+					<h4 class="accordion-offcanvas-h4">Item One Sub-header 2</h4>
+      				<ul>
+		 				<li>
+	 						<a href="#"> Item 2a</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2b</a>
+		 				</li>
+		 				<li>
+	 						<a href="#"> Item 2c</a>
+		 				</li>
+		 			</ul>
+			    </div><!-- accordion-offcanvas-content -->
+  			</div><!-- accoridan-offcanvas-content accordion -->
+  		</div><!-- accordion-offcanvas accordion -->
+
+		<div class="offcanvas-topoffset-fix"></div>
+	</div><!-- offcanvas-nav -->
+</div><!-- container -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
